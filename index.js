@@ -1,7 +1,12 @@
-module.exports = {
-  campaign: require("./campaign"),
-  user: require("./user"),
-  payment: require("./payment"),
-  donation: require("./donation"),
-  query: require("./query"),
-};
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.css";
+import App from "./App";
+
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
